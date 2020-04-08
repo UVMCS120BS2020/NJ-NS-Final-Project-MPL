@@ -18,11 +18,11 @@ int main(){
     string title = getResponse("Title of graph: ");
     string varX = getResponse("Label for x variable: ");
     string varY = getResponse("Label for y variable: ");
-    string dataFile = getResponse("Enter the .csv file where your data is held (ex. myfile.csv");
+    string dataFile = getResponse("Enter the .csv file where your data is held (ex. myfile.csv): ");
     // TODO: we can add a file reading section here that either confirms that each of the values in the csv is a number, or just casts/forces each entry to be a number
     // TODO: regardless of what it is in the first place.
 
-    string command = python + "graph.py " + dataFile + " " + title + " " + varX + " " + varY;
+    string command = python + " graph.py " + dataFile + " " + title + " " + varX + " " + varY;
     system(command.c_str());
 
     return 0;
