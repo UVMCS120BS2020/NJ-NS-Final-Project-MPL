@@ -27,3 +27,10 @@ int main(){
 
     return 0;
 }
+
+string getResponse(string prompt){
+    string response;
+    cout << prompt;
+    getline(cin, response);
+    return response;
+}
