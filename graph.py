@@ -1,4 +1,3 @@
-#Run "pip3 install opencv-python" in CLI
 import sys, os
 import matplotlib.pyplot as plt
 import csv
