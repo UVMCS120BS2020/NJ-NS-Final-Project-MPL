@@ -9,7 +9,11 @@ varX = sys.argv[3]
 varY = sys.argv[4]
 
 # Open the data file
-data = open(filename, 'r')
+try:
+    data = open(filename, 'r')
+except:
+    data = open("template.csv", 'r')
+
 data = csv.reader(data)
 
 # Initialize variables
