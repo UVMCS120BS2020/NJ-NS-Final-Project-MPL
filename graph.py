@@ -12,7 +12,9 @@ varY = sys.argv[4]
 try:
     data = open(filename, 'r')
 except:
+    print("***File could not be found, using template.csv instead***")
     data = open("template.csv", 'r')
+
 
 data = csv.reader(data)
 
